@@ -1,80 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Silva - Corretor de Imóveis</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nome do Corretor — Corretor de Imóveis</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>João Silva</h1>
-      <p>Corretor de Imóveis - CRECI 12345</p>
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#imoveis">Imóveis</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#contato">Contato</a>
-      </nav>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=bd6b6f9a6a57a3df1b5c0b5f2f6c0d3f" alt="Foto do corretor" class="avatar">
+        <div>
+          <h1>João Silva</h1>
+          <p class="role">Corretor de Imóveis | CRECI 12345</p>
+        </div>
+      </div>
+
+      <div class="contact-quick">
+        <button id="copy-phone" class="btn small">📞 (11) 9 9999-9999</button>
+        <a class="btn outline" href="mailto:joao@exemplo.com">✉️ Contato</a>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Encontre o imóvel dos seus sonhos</h2>
-      <p>Atendimento personalizado e negociação transparente.</p>
-      <a href="#imoveis" class="btn">Ver imóveis</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Encontre o imóvel dos seus sonhos</h2>
+          <p>Atendimento personalizado, avaliação justa, e negociação transparente. Trabalho com compra, venda e locação em São Paulo e região metropolitana.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#imoveis">Ver imóveis</a>
+            <a class="btn ghost" href="#contato">Agendar visita</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&s=1c0a5b9b4a5b4d0fae6a3c7c2c4a6e7f" alt="Imóvel destaque">
+        </div>
+      </div>
+    </section>
 
-  <section id="sobre" class="container">
-    <h2>Sobre mim</h2>
-    <p>Sou corretor de imóveis com mais de 10 anos de experiência. Trabalho de forma transparente e próxima do cliente, ajudando em todas as etapas da negociação.</p>
-  </section>
+    <section id="sobre" class="container about">
+      <h3>Sobre mim</h3>
+      <div class="about-grid">
+        <div>
+          <p><strong>Forma de trabalhar:</strong> Atendimento humanizado — primeiro entendo suas necessidades, faço seleção de imóveis alinhada ao seu orçamento, agendo visitas e acompanho todas as etapas da negociação até a assinatura. Uso ferramentas digitais para apresentação e assinatura eletrônica quando necessário.</p>
+          <p><strong>Diferenciais:</strong> Avaliação realista de mercado, rede de parceiros (financiamento, reformas, fotografia), transparência nas comissões, e suporte pós-venda.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>+200</strong><span>Clientes atendidos</span></div>
+          <div class="stat"><strong>+120</strong><span>Imóveis negociados</span></div>
+          <div class="stat"><strong>5★</strong><span>Avaliação média</span></div>
+        </div>
+      </div>
+    </section>
 
-  <section id="servicos" class="container">
-    <h2>Serviços</h2>
-    <div class="accordion">
-      <button class="acc-btn">Venda de Imóveis</button>
-      <div class="acc-panel"><p>Avaliação justa e divulgação profissional.</p></div>
+    <section id="servicos" class="container services">
+      <h3>Serviços</h3>
+      <div class="accordion">
+        <button class="acc-btn">Venda de Imóveis <span class="chev">▸</span></button>
+        <div class="acc-panel">
+          <p>Avaliação de preço, anúncio profissional (fotos, tour virtual), negociação e acompanhamento até a escritura.</p>
+        </div>
 
-      <button class="acc-btn">Locação</button>
-      <div class="acc-panel"><p>Gestão de contratos e escolha de inquilinos.</p></div>
+        <button class="acc-btn">Locação <span class="chev">▸</span></button>
+        <div class="acc-panel">
+          <p>Seleção de inquilinos, visita, contrato claro e gestão inicial da entrega e vistoria.</p>
+        </div>
 
-      <button class="acc-btn">Compra Sob Medida</button>
-      <div class="acc-panel"><p>Imóveis selecionados conforme seu perfil.</p></div>
-    </div>
-  </section>
+        <button class="acc-btn">Compra sob medida <span class="chev">▸</span></button>
+        <div class="acc-panel">
+          <p>Busca ativa por imóveis com filtragem por bairro, preço e características; assessoria em financiamento e documentação.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="imoveis" class="container">
-    <h2>Imóveis</h2>
-    <div class="filters">
-      <select id="tipoFilter">
-        <option value="all">Todos</option>
-        <option value="apartamento">Apartamento</option>
-        <option value="casa">Casa</option>
-        <option value="comercial">Comercial</option>
-      </select>
-      <input type="text" id="searchInput" placeholder="Pesquisar por bairro">
-    </div>
-    <div id="cards" class="cards-grid"></div>
-  </section>
+    <section id="imoveis" class="container listings">
+      <h3>Alguns imóveis</h3>
 
-  <section id="galeria" class="container">
-    <h2>Galeria</h2>
-    <div id="thumbs" class="thumbs"></div>
-  </section>
+      <div class="filters">
+        <label>Filtrar:
+          <select id="tipoFilter">
+            <option value="all">Todos</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="comercial">Comercial</option>
+          </select>
+        </label>
+        <input id="searchInput" placeholder="Pesquisar por bairro ou palavra-chave">
+      </div>
 
-  <section id="contato" class="container">
-    <h2>Contato</h2>
-    <p>📞 <span id="phoneDisplay">(11) 9 9999-9999</span> <button id="copyPhone">Copiar</button></p>
-    <p>✉️ <a href="mailto:joao@exemplo.com">joao@exemplo.com</a></p>
-  </section>
+      <div id="cards" class="cards-grid">
+        <!-- cards gerados pelo JS -->
+      </div>
+    </section>
+
+    <section id="galeria" class="container gallery">
+      <h3>Galeria</h3>
+      <div class="thumbs" id="thumbs">
+        <!-- miniaturas geradas pelo JS -->
+      </div>
+    </section>
+
+    <section id="contato" class="container contact">
+      <h3>Contato</h3>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>Nome<input type="text" id="nome" required></label>
+          <label>E-mail<input type="email" id="email" required></label>
+          <label>Telefone<input type="tel" id="telefone" required></label>
+          <label>Mensagem<textarea id="mensagem" rows="4" required></textarea></label>
+          <div class="form-actions">
+            <button class="btn" type="submit">Enviar mensagem</button>
+            <button type="button" id="copyPhone2" class="btn outline">Copiar telefone</button>
+          </div>
+          <p class="form-note">Observação: formulário de demonstração — configure envio no servidor ou via serviço (Formspree, Netlify Forms, etc.).</p>
+        </form>
+
+        <div class="contact-info">
+          <h4>Contato direto</h4>
+          <p>📞 <strong id="phoneDisplay">(11) 9 9999-9999</strong></p>
+          <p>✉️ <a href="mailto:joao@exemplo.com">joao@exemplo.com</a></p>
+          <h4>Atendimento</h4>
+          <p>Seg–Sex: 09:00–18:00 • Sáb: 09:00–13:00</p>
+          <div class="mini-map">
+            <!-- mapa exemplo (troque o iframe para o endereço real) -->
+            <iframe title="mapa" src="https://www.google.com/maps?q=São+Paulo&output=embed" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de imagem -->
+  <div id="imgModal" class="modal" aria-hidden="true">
+    <span class="modal-close" id="modalClose">✕</span>
+    <img class="modal-img" id="modalImg" alt="Ampliar imagem">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> João Silva - Corretor de Imóveis</p>
+    <div class="container">
+      <p>© <span id="year"></span> João Silva — Corretor de Imóveis • CRECI 12345</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
