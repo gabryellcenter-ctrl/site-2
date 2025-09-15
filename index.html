@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Silva - Corretor de Imóveis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>João Silva</h1>
+      <p>Corretor de Imóveis - CRECI 12345</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#imoveis">Imóveis</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Encontre o imóvel dos seus sonhos</h2>
+      <p>Atendimento personalizado e negociação transparente.</p>
+      <a href="#imoveis" class="btn">Ver imóveis</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="container">
+    <h2>Sobre mim</h2>
+    <p>Sou corretor de imóveis com mais de 10 anos de experiência. Trabalho de forma transparente e próxima do cliente, ajudando em todas as etapas da negociação.</p>
+  </section>
+
+  <section id="servicos" class="container">
+    <h2>Serviços</h2>
+    <div class="accordion">
+      <button class="acc-btn">Venda de Imóveis</button>
+      <div class="acc-panel"><p>Avaliação justa e divulgação profissional.</p></div>
+
+      <button class="acc-btn">Locação</button>
+      <div class="acc-panel"><p>Gestão de contratos e escolha de inquilinos.</p></div>
+
+      <button class="acc-btn">Compra Sob Medida</button>
+      <div class="acc-panel"><p>Imóveis selecionados conforme seu perfil.</p></div>
+    </div>
+  </section>
+
+  <section id="imoveis" class="container">
+    <h2>Imóveis</h2>
+    <div class="filters">
+      <select id="tipoFilter">
+        <option value="all">Todos</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="casa">Casa</option>
+        <option value="comercial">Comercial</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Pesquisar por bairro">
+    </div>
+    <div id="cards" class="cards-grid"></div>
+  </section>
+
+  <section id="galeria" class="container">
+    <h2>Galeria</h2>
+    <div id="thumbs" class="thumbs"></div>
+  </section>
+
+  <section id="contato" class="container">
+    <h2>Contato</h2>
+    <p>📞 <span id="phoneDisplay">(11) 9 9999-9999</span> <button id="copyPhone">Copiar</button></p>
+    <p>✉️ <a href="mailto:joao@exemplo.com">joao@exemplo.com</a></p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> João Silva - Corretor de Imóveis</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
